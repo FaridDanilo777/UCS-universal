@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram-Info</title>
+    <link rel="stylesheet" type="" href="Discos.css"/>
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <img src="img/" alt="">
+                </div>
+
+                <div class="links">
+                    <a href="Discos.html" class="link link--active">Volver</a>
+                    <a href="../index.html" class="link link--active">Inicio</a>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <p>Rendimiento Superior: Esta memoria RAM está diseñada para ofrecer un rendimiento excepcional.
+                    Con una alta velocidad de reloj y una baja latencia, tu computadora funcionará de manera más suave y rápida. </p>
+                    <p>La última tecnología en memoria RAM para tu equipo.</p>
+
+                    <h4>"Este módulo de memoria RAM DDR4 ofrece una capacidad de almacenamiento de 8 GB,
+                        siendo una elección versátil y eficiente tanto para sistemas de computadoras de escritorio como para portátiles.
+                        Con un diseño de vanguardia y tecnología de última generación, garantiza un rendimiento óptimo y una mayor velocidad de procesamiento de datos.
+                        La DDR4 es conocida por su eficiencia energética y su capacidad para manejar tareas exigentes,
+                        lo que la convierte en una elección ideal para aquellos que buscan mejorar el rendimiento de sus sistemas informáticos.
+                        Ya sea para tareas cotidianas o aplicaciones más intensivas, este módulo de memoria RAM DDR4 de 8 GB es una adición valiosa para tu configuración informática."
+                    </h4>
+                    
+                </div>
+
+                <div class="swiper-slide"><img src="../img/Disco3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../img/Disco3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../img/Disco3.jpg" alt=""></div>
+            </div>
+            
+            <div class="swiper-button-prev"></div>
+            
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+</div>
+    <div class="swiper-pagination"></div>
+</div>
+
+</div>
+    
+    
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</html>

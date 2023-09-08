@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Universal</title>
+
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <img src="img/" alt="">
+                </div>
+
+                <div class="links">
+                    <a href="#Productos" class="link">Productos  </a>
+                    <a href="#Contacto" class="link link--active">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero_main">
+                <img src="img/fondo.png" class="fondo">
+                <p class="copy"><span class="copy"></span></p>
+        </section>
+
+    </header>
+
+<div class="container" id="Productos">
+    
+    <div class="Target">
+            <img src="img/Ram1.jpg" alt="">
+            <div class="content">
+                <h2>Memorias Ram</h2>
+                <a href="Memory-ram/Rams.html">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="Target">
+            <img src="img/disk.jpg" alt="">
+            <div class="content">
+                <h2>Discos Duros</h2>
+                <a href="Discos/Discos.html">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="Target">
+            <img src="img/Intel-ryzen.jpg" alt="">
+            <div class="content">
+                <h2>Intel/Ryzen</h2>
+                <a href="CPU/CPU.html">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="Target">
+            <img src="img/img4.jpg" alt="">
+            <div class="content">
+                <h2>Gabinetes</h2>
+                <a href="Gabinetes/Gabinete.html">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="Target">
+            <img src="img/img5.jpg" alt="">
+            <div class="content">
+                <h2>Fuentes de poder</h2>
+                <a href="Fuentes de poder/Fuente-poder.html">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="Target">
+            <img src="img/img6.jpg" alt="">
+            <div class="content">
+                <h2>Mouses</h2>
+                <a href="Mouse/Mouse.html">Ver mas</a>
+            </div>
+        </div>
+
+
+        <section class="container" id="InformacionAdicional">
+            <h2>Ofertas:</h2>
+            <div class="info-content">
+                <div class="info-card">
+                    <img src="img/Gabinete3.jpg" alt="Icono 1">
+                    <h3>Gabinete Gamer</h3>
+                    <p>Con espacio para 7 Ventiladores</p>
+                    <a href="Gabinetes/Gabinete-info3.html" class="ver-mas-button">Ver mas</a>
+                </div>
+        
+                <div class="info-card">
+                    <img src="img/intel2.jpg" alt="Icono 2">
+                    <h3>Intel Core i7</h3>
+                    <p>Intel de 12 Nucleos</p>
+                    <a href="CPU/CPU-info2.html" class="ver-mas-button">Ver mas</a>
+                </div>
+        
+                <div class="info-card">
+                    <img src="img/Disco3.jpg" alt="Icono 3">
+                    <h3>Disco Solido</h3>
+                    <p>almacenamiento 1TB</p>
+                    <a href="Discos/Discos-info3.html" class="ver-mas-button">Ver mas</a>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/Ram4.jpg" alt="Icono 3">
+                    <h3>Mmemoria Ram Corsair</h3>
+                    <p>Capacidad de 16GB</p>
+                    <a href="Memory-ram/Ram-info4.html" class="ver-mas-button">Ver mas</a>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/Fuente-poder2.jpg" alt="Icono 3">
+                    <h3>Fuente de Poder RGB</h3>
+                    <p>Potencia de 850w</p>
+                    <a href="Fuentes de poder/Fuente-poder-info2.html" class="ver-mas-button">Ver mas</a>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/mouse4.jpg" alt="Icono 3">
+                    <h3>Mouse Logitech</h3>
+                    <p>G-502 alambrico</p>
+                    <a href="Mouse/Mouse-info4.html" class="ver-mas-button">Ver mas</a>
+                </div>
+            </div>
+</div>
+
+
+<footer>
+    <div class="contact-info" id="Contacto">
+        <p>Telefono: 310-705753</p>
+        <p>Direccion: Calle 11 5-68, Neiva, Colombia</p>
+        <p>Correo: ejemplo@example.com</p>
+    </div>
+
+    <div class="social-links">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+
+    </div>
+</footer>
+
+
+</body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+        window.scrollTo({
+        top: targetElement.offsetTop,
+            behavior: "smooth"
+        });
+        }
+    });
+});
+});
+
+
+</script>
+
+</html>

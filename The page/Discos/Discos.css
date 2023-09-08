@@ -1,0 +1,118 @@
+:root{
+	--gold1: #F4BD76;
+	--gold2: #F6CD8F;
+	--gray: #ffffff80;
+	--gray2: #f7d9d990;
+	--black1: #1A1B1F;
+	--black2: #30353B;
+	--shadow: 0 10px 10px;
+	--color_shadow: #00000033;
+	--body-color:#E4E9F7;
+	--sidebar-color:#FFF;
+	--primary-color:#695CFE;
+	--primary-color-light:#F6F5FF;
+	--toggle-color:#DDD;
+	--text-color:#707070;
+}
+
+
+.nav_hero {
+    background-color: #333;
+    padding: 10px 0; 
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px; 
+    height: auto;
+}
+
+.links {
+    margin-left: auto; 
+}
+
+.link{
+	display:inline-block;
+	color: inherit;
+	text-decoration: none;
+	font-weight: 300;
+	padding: 10px;
+}
+
+.link:hover{
+    background: var(--black1);
+    border-radius: 10px;
+}
+
+
+.link--active {
+    color: #ff9900; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h4,p{
+    color: var(--black2);
+    text-align: left;
+}
+
+.swiper-container {
+    width: 80%;
+    height: auto; /* Cambiado a "auto" */
+    max-height: 100px; /* Altura máxima deseada */
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%; /* Cambiado a 100% */
+    width: auto;
+    height: auto;
+}
+
+.swiper-pagination {
+    position: relative;
+    bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    opacity: 0.7;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
